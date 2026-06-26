@@ -1,26 +1,59 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: 'Mayfest';
+  src: url('/fonts/Mayfest-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Mayfest';
+  src: url('/fonts/Mayfest-Regular.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  /* Backgrounds */
+  --color-white:  #FFFFFF;
+  --color-cloud:  #F5F3EF;
+  --color-linen:  #E5DDD3;
+  --color-sand:   #CCC5B7;
+
+  /* Borders / dividers */
+  --color-rule:   #BDB6AC;
+
+  /* Text */
+  --color-dove:   #79746E;
+  --color-smoke:  #3D3935;
+  --color-ink:    #2A2725;
+
+  /* Warm accent */
+  --color-clay:   #8B7355;
+
+  /* Halite dark palette */
+  --color-night:     #1C1916;
+  --color-night-mid: #252219;
+  --color-gold:      #C4A97A;
+
+  /* Font families */
+  --font-display: 'Mayfest', Georgia, 'Times New Roman', serif;
+  --font-body:    var(--font-lato), 'Helvetica Neue', Arial, sans-serif;
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  color-scheme: light;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: #FFFFFF;
+  color: #2A2725;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
