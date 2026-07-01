@@ -78,7 +78,7 @@ export default function Hero() {
       >
         <Image
           src="/images/hero-brand.jpg"
-          alt="Two people reviewing a hand-drawn strategy diagram at a wooden desk, laptops open"
+          alt="Flat lay of unlabeled beauty and wellness products — soap bars, salt scrub, dropper bottle, and eucalyptus"
           fill
           className="object-cover"
           sizes="(min-width: 1024px) 42vw, 100vw"

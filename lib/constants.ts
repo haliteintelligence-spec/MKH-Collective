@@ -7,11 +7,11 @@ export const BRAND = {
 };
 
 export const NAV_LINKS = [
-  { label: 'Services', href: '#services' },
-  { label: 'Why Us', href: '#why-us' },
-  { label: 'Our Story', href: '#story' },
-  { label: 'Technology', href: '#technology' },
-  { label: 'Contact', href: '#contact' },
+  { label: 'Services', href: '/#services' },
+  { label: 'Why Us', href: '/#why-us' },
+  { label: 'Technology', href: '/#technology' },
+  { label: 'Contact', href: '/#contact' },
+  { label: 'Our Story', href: '/story' },
 ];
 
 export const PAIN_POINTS = [

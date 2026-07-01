@@ -3,7 +3,6 @@ import Hero from '@/components/mkh/Hero';
 import PainPoints from '@/components/mkh/PainPoints';
 import Statement from '@/components/mkh/Statement';
 import Services from '@/components/mkh/Services';
-import Approach from '@/components/mkh/Approach';
 import HaliteTeaser from '@/components/mkh/HaliteTeaser';
 import Contact from '@/components/mkh/Contact';
 import Footer from '@/components/mkh/Footer';
@@ -17,7 +16,6 @@ export default function Home() {
         <PainPoints />
         <Services />
         <Statement />
-        <Approach />
         <HaliteTeaser />
         <Contact />
       </main>
