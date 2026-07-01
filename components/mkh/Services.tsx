@@ -47,7 +47,7 @@ export default function Services() {
                 </h3>
               </div>
 
-              <div className="col-span-11 lg:col-span-7 lg:col-start-5">
+              <div className="col-span-11 lg:col-span-8 lg:col-start-5">
                 <p className="font-body text-ink leading-relaxed text-[15px] mb-2">
                   {service.headline}
                 </p>
@@ -68,12 +68,6 @@ export default function Services() {
                     </li>
                   ))}
                 </ul>
-              </div>
-
-              <div className="hidden lg:flex col-span-1 justify-end items-start pt-1">
-                <span className="text-[13px] text-clay opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all duration-300">
-                  →
-                </span>
               </div>
             </motion.div>
           ))}
