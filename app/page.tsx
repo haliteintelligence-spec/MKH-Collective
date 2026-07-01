@@ -1,5 +1,6 @@
 import Navbar from '@/components/mkh/Navbar';
 import Hero from '@/components/mkh/Hero';
+import PainPoints from '@/components/mkh/PainPoints';
 import Statement from '@/components/mkh/Statement';
 import Services from '@/components/mkh/Services';
 import Approach from '@/components/mkh/Approach';
@@ -13,8 +14,9 @@ export default function Home() {
       <Navbar />
       <main>
         <Hero />
-        <Statement />
+        <PainPoints />
         <Services />
+        <Statement />
         <Approach />
         <HaliteTeaser />
         <Contact />

@@ -9,7 +9,7 @@ export default function Services() {
   const isInView = useInView(ref, { once: true, margin: '-60px' });
 
   return (
-    <section id="services" className="py-24 lg:py-32 bg-white border-t border-rule/40">
+    <section id="services" className="py-12 lg:py-16 bg-white border-t border-rule/40">
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         <motion.div
           ref={ref}
@@ -19,10 +19,10 @@ export default function Services() {
           className="mb-16 lg:mb-20"
         >
           <p className="text-[10px] font-body font-medium tracking-[0.28em] uppercase text-dove mb-5">
-            What We Do
+            Our Services
           </p>
           <h2 className="font-display text-4xl lg:text-5xl font-normal text-ink max-w-xl leading-[1.15]">
-            Three Pillars.<br /><strong className="font-extrabold not-italic">One Integrated Practice.</strong>
+            <strong className="font-extrabold not-italic">What We Do</strong>
           </h2>
         </motion.div>
 
@@ -45,15 +45,29 @@ export default function Services() {
                 <h3 className="font-display text-2xl lg:text-3xl font-normal text-ink group-hover:text-clay transition-colors duration-300">
                   {service.label}
                 </h3>
-                <p className="text-[10px] font-body font-medium tracking-[0.16em] uppercase text-dove mt-1">
-                  {service.headline}
-                </p>
               </div>
 
               <div className="col-span-11 lg:col-span-7 lg:col-start-5">
-                <p className="font-body text-smoke leading-relaxed text-[15px] font-light">
+                <p className="font-body text-ink leading-relaxed text-[15px] mb-2">
+                  {service.headline}
+                </p>
+                <p className="font-body text-smoke leading-relaxed text-[15px] font-light mb-6">
                   {service.description}
                 </p>
+                <p className="text-[10px] font-body font-medium tracking-[0.16em] uppercase text-dove mb-3">
+                  Services Include
+                </p>
+                <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-2">
+                  {service.bullets.map((bullet) => (
+                    <li
+                      key={bullet}
+                      className="flex items-start gap-2 font-body text-smoke text-[14px] font-light leading-relaxed"
+                    >
+                      <span className="w-1 h-1 rounded-full bg-clay mt-[7px] shrink-0" />
+                      {bullet}
+                    </li>
+                  ))}
+                </ul>
               </div>
 
               <div className="hidden lg:flex col-span-1 justify-end items-start pt-1">

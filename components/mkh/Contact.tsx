@@ -39,7 +39,7 @@ export default function Contact() {
 
   return (
     <section id="contact" className="bg-sand/30 border-t border-rule/40">
-      <div ref={ref} className="max-w-7xl mx-auto px-6 lg:px-12 py-24 lg:py-32">
+      <div ref={ref} className="max-w-7xl mx-auto px-6 lg:px-12 py-12 lg:py-16">
         <motion.div
           initial={{ opacity: 0, y: 16 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
@@ -49,9 +49,14 @@ export default function Contact() {
           <p className="text-[10px] font-body font-medium tracking-[0.28em] uppercase text-dove mb-5">
             Let&apos;s Talk
           </p>
-          <h2 className="font-display text-4xl lg:text-5xl font-normal text-ink leading-[1.15]">
-            Ready to <strong className="font-extrabold not-italic">Move the Needle?</strong>
+          <h2 className="font-display text-4xl lg:text-5xl font-normal text-ink leading-[1.15] mb-6">
+            Ready to <strong className="font-extrabold not-italic">Scale Smarter?</strong>
           </h2>
+          <p className="font-body text-smoke leading-relaxed max-w-xl text-[15px] font-light">
+            Whether you need executive operational leadership, stronger supply chain systems, or
+            AI-enabled growth, we&apos;re ready to help. Let&apos;s build the operating
+            foundation your next stage of growth deserves.
+          </p>
         </motion.div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24">
@@ -78,7 +83,7 @@ export default function Contact() {
               rel="noopener noreferrer"
               className="text-[11px] font-body font-medium tracking-[0.18em] uppercase text-ink underline underline-offset-4 decoration-rule hover:decoration-ink transition-colors duration-200 self-start"
             >
-              View Calendar →
+              Schedule Your Discovery Call →
             </a>
           </motion.div>
 

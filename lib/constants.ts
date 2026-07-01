@@ -1,6 +1,6 @@
 export const BRAND = {
   name: 'MKH Collective',
-  tagline: 'Data-driven consulting for consumer packaged goods.',
+  tagline: 'Build a CPG brand that runs as beautifully as it looks.',
   email: 'marie@mkhcollective.com',
   calendlyUrl: 'https://calendar.app.google/WDQB7NybonmrFhay6',
   haliteUrl: 'https://www.haliteintelligence.com',
@@ -8,52 +8,106 @@ export const BRAND = {
 
 export const NAV_LINKS = [
   { label: 'Services', href: '#services' },
-  { label: 'Approach', href: '#approach' },
+  { label: 'Why Us', href: '#why-us' },
+  { label: 'Our Story', href: '#story' },
   { label: 'Technology', href: '#technology' },
   { label: 'Contact', href: '#contact' },
 ];
 
+export const PAIN_POINTS = [
+  'Inventory is either sitting too long or selling out too quickly.',
+  'Manufacturing and supplier communication feels reactive instead of strategic.',
+  'Product launches take longer than they should.',
+  "Margins are shrinking, but it's difficult to pinpoint why.",
+  'Operations depend on the founder to keep everything moving.',
+  'Your team spends more time updating spreadsheets than making decisions.',
+  "You're preparing for retail, fundraising, or your next stage of growth and need operational maturity.",
+];
+
 export const SERVICES = [
   {
-    id: 'growth',
-    label: 'Growth',
-    headline: 'Scale with Intent',
+    id: 'fractional-coo',
+    label: 'Fractional COO',
+    headline: 'Executive operational leadership without the cost of a full-time COO.',
     description:
-      'Demand generation, retail velocity optimization, and go-to-market strategy built on real category data. We turn shelf performance into a repeatable engine.',
-    icon: 'growth',
+      'We help build the systems, processes, and accountability needed to scale efficiently.',
+    bullets: [
+      'Operational strategy',
+      'Business process design',
+      'KPI dashboards',
+      'Cross-functional leadership',
+      'Team operating cadence',
+      'Growth planning',
+      'Retail readiness',
+    ],
   },
   {
-    id: 'procurement',
-    label: 'Procurement',
-    headline: 'Source Smarter',
+    id: 'supply-chain',
+    label: 'Supply Chain & Procurement',
+    headline: 'Build resilient, profitable supply chains.',
     description:
-      'Strategic sourcing, supplier relationship management, and cost-to-serve modeling that protects margin without compromising quality or delivery.',
-    icon: 'procurement',
+      'From supplier negotiations to sourcing strategy, we help improve margins while reducing operational risk.',
+    bullets: [
+      'Strategic sourcing',
+      'Supplier selection',
+      'Cost reduction initiatives',
+      'Procurement strategy',
+      'Inventory planning',
+      'Demand forecasting',
+      'Manufacturing optimization',
+    ],
   },
   {
-    id: 'operations',
-    label: 'Operations',
-    headline: 'Build to Scale',
+    id: 'ai-automation',
+    label: 'AI & Operational Automation',
+    headline: 'Work smarter, not harder.',
     description:
-      'Supply chain design, process architecture, and operational infrastructure built for CPG complexity — so your brand can grow without breaking.',
-    icon: 'operations',
+      'We identify repetitive work across your business and implement AI-powered systems that improve speed, visibility, and decision-making.',
+    bullets: [
+      'AI workflow automation',
+      'Operations dashboards',
+      'Customer intelligence',
+      'Product recommendation systems',
+      'Knowledge management',
+      'Process automation',
+    ],
+  },
+  {
+    id: 'growth-ops',
+    label: 'Growth Operations',
+    headline: 'Scale with intention.',
+    description:
+      'As your business grows, your operations should evolve alongside it. We help prepare your business for retail expansion, new product launches, fundraising, international sourcing, operational due diligence, and scaling teams and systems.',
+    bullets: [
+      'Retail expansion',
+      'New product launches',
+      'Fundraising',
+      'International sourcing',
+      'Operational due diligence',
+      'Scaling teams and systems',
+    ],
   },
 ];
 
-export const APPROACH_POINTS = [
-  {
-    title: 'Category Intelligence',
-    body: 'We analyze market velocity, shelf placement, and competitive positioning before making a single recommendation.',
-  },
-  {
-    title: 'Integrated Data Models',
-    body: 'Our frameworks connect supply-side cost data with demand-side signals for decisions that hold up end-to-end.',
-  },
-  {
-    title: 'Actionable Outputs',
-    body: 'No decks that collect dust. Every engagement delivers a working model, playbook, or tool your team can use immediately.',
-  },
+export const EXPERIENCE_AREAS = [
+  'Beauty',
+  'Personal Care',
+  'Wellness',
+  'Consumer Packaged Goods (CPG)',
+  'Procurement',
+  'Supply Chain',
+  'Manufacturing',
+  'AI-Powered Operations',
 ];
+
+export const FOUNDER = {
+  name: 'Marie Ozenua',
+  bio: [
+    'MKH Collective was founded by Marie Ozenua, an operations and supply chain strategist with experience across consulting, procurement, and consumer products.',
+    'After helping organizations optimize sourcing and operations, Marie saw the same pattern repeated across emerging consumer brands: incredible products held back by fragmented operations.',
+    'MKH Collective exists to solve that problem by bringing enterprise-level operational thinking to growing brands.',
+  ],
+};
 
 export const HALITE_CAPABILITIES = [
   {
