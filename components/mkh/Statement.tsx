@@ -26,7 +26,7 @@ export default function Statement() {
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8, delay: 0.1 }}
         >
-          Most consultants give advice.{' '}
+          Most consultants give advice.<br />
           <strong className="font-extrabold not-italic">We build operating systems.</strong>
         </motion.p>
 
